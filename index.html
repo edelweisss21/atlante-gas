@@ -10,7 +10,7 @@
     <title>Атлант Газ +</title>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="distribution/styles/styles.min.css">
+    <link rel="stylesheet" href="distribution/styles/styles.css">
 
     <!-- ICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="distribution/icons/apple-touch-icon.png">
@@ -33,7 +33,8 @@
                     </div>
                     <div class="popup__main">
                         <input type="text" name="name" placeholder="имя" required class="popup__main-element">
-                        <input type="number" name="number" placeholder="телефон" required class="popup__main-element">
+                        <input id="phone-number" type="tel" name="number" placeholder="телефон" required
+                            class="popup__main-element">
                         <button type="submit" value="submit" class="popup__main-btn">Заказать доставку
                             газа</button>
                     </div>
@@ -421,6 +422,8 @@
         </div>
     </footer>
 
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/imask"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="distribution/js/script.min.js"></script>
     <script src="distribution/js/main.min.js"></script>
